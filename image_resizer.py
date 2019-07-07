@@ -1,6 +1,7 @@
 import numpy as np
 from PIL import Image
 
+
 def squarify_image(img):
     if img.shape[0] == img.shape[1]:
         return img
@@ -13,6 +14,7 @@ def squarify_image(img):
     else:
         squared_img[padding:img.shape[1] - padding, :] = img
     return squared_img
+
 
 if __name__ == "__main__":
     fn = "sample.jpeg"
